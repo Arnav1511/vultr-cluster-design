@@ -4,11 +4,8 @@ A 2-tier web application on Vultr Kubernetes Engine (VKE), with an Istio
 ambient service mesh, Gateway API ingress, three databases, Vault-managed
 secrets, Prometheus/Grafana observability and a GitOps delivery pipeline.
 
-| | |
-|---|---|
-| Frontend | https://app.139.84.159.60.sslip.io |
-| API | https://app.139.84.159.60.sslip.io/api/status · `/api/messages` |
-| Grafana | https://grafana.139.84.159.60.sslip.io |
+> **Decommissioned 20 October 2026.** The live deployment described here was
+> torn down after the review; this document describes it as it ran.
 
 ## 1. System architecture
 

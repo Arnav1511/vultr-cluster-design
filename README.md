@@ -4,23 +4,19 @@ A 2-tier application on Vultr Kubernetes Engine with an Istio ambient mesh,
 Gateway API ingress, three databases, Vault-managed secrets, Prometheus and
 Grafana, and a GitOps pipeline that builds, scans, deploys and rolls back.
 
-## Live deployment
+## Status: decommissioned
 
-| | URL |
+The deployment ran from 9 to 20 October 2026 and was then torn down after the
+review: the cluster, registry, load balancer, volumes and object storage were
+all deleted, and the repository's deploy credentials removed. The links below
+no longer resolve; everything needed to rebuild it is in
+[docs/setup-guide.md](docs/setup-guide.md).
+
+| | URL (while live) |
 |---|---|
-| Frontend | https://app.139.84.159.60.sslip.io |
-| API — status | https://app.139.84.159.60.sslip.io/api/status |
-| API — messages (`GET`, `POST`) | https://app.139.84.159.60.sslip.io/api/messages |
-| Grafana | https://grafana.139.84.159.60.sslip.io (login supplied with the submission) |
-
-Dashboards: **Application Overview** and **Infrastructure Overview**, under
-the `custom` tag. Cluster access is described in
-[docs/setup-guide.md](docs/setup-guide.md#23-cluster-access).
-
-```bash
-curl https://app.139.84.159.60.sslip.io/api/status
-curl -X POST -d '{"text":"hello"}' https://app.139.84.159.60.sslip.io/api/messages
-```
+| Frontend | `https://app.139.84.159.60.sslip.io` |
+| API | `https://app.139.84.159.60.sslip.io/api/status`, `/api/messages` |
+| Grafana | `https://grafana.139.84.159.60.sslip.io` |
 
 ## Architecture
 
